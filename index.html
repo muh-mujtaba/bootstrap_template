@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- for scrool to top button -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+    <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- bootstrap links -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -25,18 +32,619 @@
     <!-- css file -->
     <link rel="stylesheet" href="./style.css">
     
-    <title>Home-Page</title>
+    <title>Home</title>
   </head>
   <body>
 
+    <!-- for scroll to top  -->
+    <button class="scroll-top">
+      <div class="arrow up"></div>
+    </button>
+
+    <section>
+      <div class="container-fluid nv_bar ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="company" href="#">Career Institute</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto" id="navlinks">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home" aria-current="page" href="#hm">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item" id="getstarted">
+                  <a class="nav-link" href="#">Get Started</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid d-flex home_cont" id="hm">
+        <div class="row mt-5">
+        <div class="col-6 col-md-6 col-sm-12 hm_left p-5 mt-5" >
+          <h1>Bettter digital experience with Ninestars</h1>
+          <p class="mt-4 mb-4">We are team of talented designers making websites with Bootstrap</p>
+          <a href="#"> Get Started</a>
+        </div>
+        <div class="col-6 col-sm-12 col-md-6 d-sm-none d-md-block col-lg-block hm_right p-5">
+          <img class="vert-move" src="./images/hero-img.svg" alt="home photo">
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid d-flex about_cont" id="about">
+        <div class="row" data-aos="fade-up" >
+        <div class="col-6 col-md-12 col-sm-12 col-lg-6 ab_left p-5">
+          <img src="./images/about-img.svg" alt="about photo">
+        </div>
+        <div class="col-6 col-md-12 col-lg-6 col-sm-12 ab_right p-5" >
+          <h2>Voluptatem dignissimos provident quasi</h2>
+          <p class="mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+          <div class="row">
+            <div class="col-6 col-md-6 col-sm-12 ab_right_inside">
+              <i class="fa-solid fa-note-sticky pb-2"></i>
+              <h4>Corporis voluptates</h4>
+              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            </div>
+            <div class="col-6 col-md-6 col-sm-12 ab_right_inside">
+              <i class="fa-solid fa-cube  pb-2"></i>
+              <h4>Ullamco laboris nisi</h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid service_cont"  id="service">
+        <div class="row " data-aos="fade-up">
+          <div class="col-12 service_hd d-flex justify-content-center mt-4">
+            <h5>Services</h5>
+          </div>
+          <div class="col-12 service_bt d-flex justify-content-center mt-1">
+            <h4>Check out the great services we offer</h4>
+          </div>
+        </div>
+
+        <div class="row mt-5 mb-5  justify-content-evenly" data-aos="fade-up">
+          <div class="mb-5" style="max-width: 18rem;">
+            <div class="card-body service_card">
+              <i class="fa-solid fa-basketball"></i>
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+            </div>
+          </div>
+
+          <div class=" mb-5 " style="max-width: 18rem;">
+            <div class="card-body service_card">
+              <i class="fa-solid fa-note-sticky"></i>
+              <h5 class="card-title">Sed ut perspiciatis</h5>
+              <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+            </div>
+          </div>
+
+          <div class=" mb-5" style="max-width: 18rem;">
+            <div class="card-body service_card">
+              <i class="fa-regular fa-gauge-simple-high"></i>
+              <h5 class="card-title">Magni Dolores</h5>
+              <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
+            </div>
+          </div>
+
+          <div class=" mb-5  " style="max-width: 18rem;">
+            <div class="card-body service_card">
+              <i class="fa-regular fa-earth-asia"></i>
+              <h5 class="card-title">Nemo Enim</h5>
+              <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid" id="portfolio">
+        <div class="row " data-aos="fade-up" >
+          <div class="col-12 portfolio_hd d-flex justify-content-center mt-4">
+            <h5>Portfolio</h5>
+          </div>
+          <div class="col-12 portfolio_bt d-flex justify-content-center mt-1">
+            <h4>Check out our beautifull portfolio</h4>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <br><br><br>
+      under constuction
+      <br><br><br>
+      <br><br><br>
+    </section>
+
+    <section>
+      <div class="container-fluid fq_container" >
+        <div class="row " data-aos="fade-up">
+          <div class="col-12 fq_hd d-flex justify-content-center mt-4">
+            <h5>F.A.Q</h5>
+          </div>
+          <div class="col-12 fq_bt d-flex justify-content-center mt-1">
+            <h4>Frequently Asked Questions</h4>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush mt-3 mb-5" id="accordionFlushExample" data-aos="fade-up">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed faq_inside" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq_inside_data">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed faq_inside" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq_inside_data">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed faq_inside" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq_inside_data">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed faq_inside" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #4
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq_inside_data">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed faq_inside_data" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #5
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq_inside_data">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed faq_inside" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #6
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq_inside_data">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid"  id="team">
+        <div class="row " data-aos="zoom-out-up">
+          <div class="col-12 tm_hd d-flex justify-content-center mt-4">
+            <h5>Team</h5>
+          </div>
+          <div class="col-12 tm_bt d-flex justify-content-center mt-1">
+            <h4>Our team is always here to help</h4>
+          </div>
+        </div>
+
+        <div class="row justify-content-center p-5" data-aos="zoom-out-up">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="team">
+            <img src="./images/team-1.jpg" class="img-fluid" alt="...">
+            <div class="team_inside">
+              <div class="team_info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+              <div class="team_social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="team">
+            <img src="./images/team-2.jpg" class="img-fluid" alt="...">
+            <div class="team_inside">
+              <div class="team_info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+              <div class="team_social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="team">
+            <img src="./images/team-3.jpg" class="img-fluid" alt="...">
+            <div class="team_inside">
+              <div class="team_info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+              <div class="team_social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="team">
+            <img src="./images/team-4.jpg" class="img-fluid" alt="...">
+            <div class="team_inside">
+              <div class="team_info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+              <div class="team_social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid client">
+        <div class="row" data-aos="zoom-out-up">
+          <div class="col-12 tm_hd d-flex justify-content-center mt-4">
+            <h5>Clients</h5>
+          </div>
+          <div class="col-12 tm_bt d-flex justify-content-center mt-1">
+            <h4>They trusted us</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center" data-aos="zoom-out-up">
+          <div class="col-10">
+            
+        <div class="mb-5">
+          <div class="client_inside mt-3 mb-3 d-flex">
+            <div class="p-4 client_inside_logo"><img src="./images/client-1.png" class="img-fluid" alt=""></div>
+            <div class="p-4 client_inside_logo"><img src="./images/client-2.png" class="img-fluid" alt=""></div>
+            <div class="p-4 client_inside_logo"><img src="./images/client-3.png" class="img-fluid" alt=""></div>
+            <div class="p-4 client_inside_logo"><img src="./images/client-4.png" class="img-fluid" alt=""></div>
+            <div class="p-4 client_inside_logo"><img src="./images/client-5.png" class="img-fluid" alt=""></div>
+            <div class="p-4 client_inside_logo"><img src="./images/client-6.png" class="img-fluid" alt=""></div>
+            <div class="p-4 client_inside_logo"><img src="./images/client-7.png" class="img-fluid" alt=""></div>
+            <div class="p-4 client_inside_logo"><img src="./images/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
 
 
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container-fluid mt-5 mb-5 contact bg-white"  id="contact">
+        <div class="row" data-aos="zoom-out-up">
+          <div class="col-12 tm_hd d-flex justify-content-center mt-4">
+            <h5>Contact Us</h5>
+          </div>
+          <div class="col-12 tm_bt d-flex justify-content-center mt-1">
+            <h4>Contact us the get started</h4>
+          </div>
+        </div>
+
+        <div class="row mt-5 justify-content-evenly" data-aos="zoom-out-up">
+
+        <div class="col-lg-4 col-md-8 col-sm-10 mt-3 shadow lt_contact_info p-3">
+          <div class="p-3">
+            <div class="address d-flex">
+              <i class="fa-solid fa-location-dot p-3"></i>
+              <div>
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+            <div class="address d-flex">
+              <i class="fa-solid fa-envelope p-3"></i>
+              <div>
+              <h4>Email:</h4>
+              <p>muhammadmujtaba0978@gmail.com</p>
+              </div>
+            </div>
+            <div class="address d-flex">
+              <i class="fa-solid fa-mobile-screen-button p-3"></i>
+              <div>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8444183006645!2d73.0667915143998!3d31.4184123593147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392243450c1147b7%3A0x7a1253803d90ccb9!2sCareer%20Institute%20-%20Jinnah%20Colony%20Campus%20(CIFSD02)!5e0!3m2!1sen!2s!4v1650133402114!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-8 mt-3 col-sm-10 shadow rt_contact_info">
+          <form action="">
+            <div class="row justify-content-evenly mt-5 p-5">
+              <div class="col-6 mb-4">
+                <input class="w-100" type="text" name="name" id="" placeholder="Your Name">
+              </div>
+              <div class="col-6 mb-4">
+                <input class="w-100" type="email" name="email" id="" placeholder="Your Email">
+              </div>
+              <div class="col-12 mb-4">
+                <input class="w-100" type="text" name="subject" placeholder="Subject">
+              </div>
+              <div class="col-12 mb-4">
+                <textarea class="w-100" name="" id="" cols="30" rows="7" placeholder="Message"></textarea>
+              </div>
+              <div class="col-5">
+                <button type="button" class="btn btn-lg custom_btn">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container-fluid ft">
+        <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3 ft_intro">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Career Institute</h5>
+        <p>Jinnah Colony Faisalabad</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 ft_inside">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Useful Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">
+              Home</a>
+          </li>
+          <li>
+            <a href="#!">
+              About us</a>
+          </li>
+          <li>
+            <a href="#!">
+              Services</a>
+          </li>
+          <li>
+            <a href="#!">Terms of service</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 ft_inside">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Our Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Web Design</a>
+          </li>
+          <li>
+            <a href="#!">Web Development</a>
+          </li>
+          <li>
+            <a href="#!">
+              Product Management</a>
+          </li>
+          <li>
+            <a href="#!">
+              Marketing</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+<hr>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 ft_copy">© 2020 Copyright:
+    <a href="#"> Career Institute</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+      </div>
+    </section>
+    <!-- aos library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- bootstrap link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- for scroll to top -->
+    <script>
+      // NOTICE: This pen may appear to not work on mobile devices, but it is  due to the codepen footer and the browser's bottom menu bar that hide the button. It should work fine when implemented for your website
+
+// used to avoid using 255, thus generating white-ish backgrounds that make text unreadable
+const colorMax = 192;
+
+// gets the breakpoint at which the scroll-to-top button should appear
+const scrollBreakpoint = window.innerHeight * 0.9;
+
+document.addEventListener('DOMContentLoaded', () => {
+  randomizeBackgrounds();
+  setupScrollListener();
+  setupScrollEvent();  
+});
+
+// scrolls window to top
+function setupScrollEvent() {
+  const scrollButton = document.querySelector('.scroll-top');
+  
+  scrollButton.addEventListener('click', (e) => {
+    // not the best solution until Safari/Edge support scroll behavior
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Thanks to Geroge Daniel https://stackoverflow.com/questions/51229742/javascript-window-scroll-behavior-smooth-not-working-in-safari
+    smoothVerticalScrolling(scrollButton.parentElement, 250, "top");
+  });
+}
+
+// prepares the window for a scroll event to show the scroll button
+function setupScrollListener() {  
+   window.addEventListener('scroll', (e) => {
+     const scrollButton = document.querySelector('.scroll-top');
+     
+     // const scrollOffset = document.scrollingElement.scrollTop;
+     const scrollOffset = window.scrollY;
+    
+     if (scrollOffset >= scrollBreakpoint) {
+       scrollButton.classList.add('visible');
+     } else if (scrollOffset <= 0) {
+       scrollButton.classList.remove('visible');
+     }    
+  });
+}
+
+function randomizeBackgrounds() {
+  // get all the content containers
+  const contentContainers = document.querySelectorAll('.home_cont');
+  
+  [].forEach.call(contentContainers, home_cont => {
+    // assign random background
+    <!-- home_cont.style.background = `rgb(${randVal(colorMax)},${randVal(colorMax)},${randVal(colorMax)})`; -->
+  });
+}
+
+// random between 0 to max
+function randVal(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+// uses a timeout to scroll to top
+function smoothVerticalScrolling(e, time, where) {
+  // gets the element's top position relative to the viewport
+  const eTop = e.getBoundingClientRect().top;
+  
+  // divides the top offset into 100 steps to be ellapsed
+  const eAmt = eTop / 100;
+  
+  // starting time
+  let curTime = 0;
+  
+  // not to exceed the desired duration
+  while (curTime <= time) {
+    // call a function to execute at one hundreth of the desired scroll time
+    window.setTimeout(SVS_B, curTime, eAmt, where);
+    // increase by one hundreth of the desired time to execute exactly 100 times
+    curTime += time / 100;
+  }
+}
+
+function SVS_B(eAmt, where) {
+  // scroll by half the hundredth of the top offset if destination is not top (since to center only involves scrolling either in the top or bottom half of the window)
+  if(where == "center" || where == "") {
+    window.scrollBy(0, eAmt / 2); 
+  }
+  // otherwise scroll the full amount
+  if (where == "top") {
+    window.scrollBy(0, eAmt);
+  }    
+}
+
+    </script>
   </body>
 </html>
